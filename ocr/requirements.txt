@@ -1,0 +1,20 @@
+fastapi==0.104.1
+uvicorn==0.24.0
+ocrmypdf==16.13.0
+pytesseract==0.3.10
+opencv-python==4.8.0.76
+Pillow>=10.0.0
+pdf2docx==0.5.12
+python-docx>=1.0.0
+
+# Optional system dependencies (NOT required for core functionality):
+# - jbig2: Used for PDF image optimization. Install on Linux via: apt-get install jbig2enc
+#   On macOS: brew install jbig2enc
+#   Windows users: Not easily available, OCR works without it
+#
+# - pngquant: Used for PNG compression. Install on Linux via: apt-get install pngquant
+#   On macOS: brew install pngquant
+#   Windows users: Not easily available, OCR works without it
+#
+# These tools optimize PDF file sizes but are NOT required for OCR to work.
+# Set optimize=0 in ocrmypdf.ocr() calls to disable optimization attempts.
